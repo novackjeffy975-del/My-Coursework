@@ -17,7 +17,7 @@ def load_sessions(): # used to load the study sessions from the JSON file. If th
         return []
 
     try:
-        with DATA_FILE.open("r", encoding="utf-8") as file:
+        with DATA_FILE.open("r", encoding="utf-8") as file: # 
             data = json.load(file)
             if isinstance(data, list):
                 return data
@@ -147,7 +147,7 @@ def main():
 
     while True:
         print("================================")
-        print("=== Machar's study Planner ===")
+        print("=== + Machar's study Planner + |")
         print("================================")
         print("1. Add a study session")
         print("2. View all sessions")
